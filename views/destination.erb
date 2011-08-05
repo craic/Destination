@@ -1,0 +1,29 @@
+
+<p>
+Date start <%= @date_start %> through <%= @date_end %>
+</p>
+
+
+<table>
+<tr>
+	<td>City</td>
+	<td>Attendees</td>
+	<td>Total Kms</td>
+	<td>Total CO2 Kg</td>
+</tr>
+
+<% @headcount.each_index do |i| %>
+	<tr>
+	<td><%= @city[i] %></td>
+  	<td style='text-align: right'><%= @headcount[i] %> </td>
+  	<td style='text-align: right'><%= @total_kms[i] %> </td>
+  	<td style='text-align: right'><%= @co2_kgs[i] %> </td>
+	</tr>
+<% end %>
+</table>
+
+<pre>
+<% #= @str %>	
+</pre>
+
+

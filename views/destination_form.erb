@@ -1,0 +1,30 @@
+
+<form  action="/destination" method="get"> 
+	
+
+The Meeting runs from 
+<input id="date_start" name="date_start" label="Start Date" size="12" type="text" tabindex="1"/> 
+through 
+<input id="date_end" name="date_end" label="End Date" size="12" type="text" tabindex="1"/> 
+(e.g. 2011-08-01)
+<br/>
+
+<p>Enter each source city and number of attendees</p>
+
+<% (0..5).each do |i| %>
+<input type="text" name="headcount[<%= i %>]" size="6"> people from 
+<select name="city[<%= i %>]">
+<% @city_names.each do |city| %>
+	<option value="<%= city %>"><%= city %>
+<% end %>
+</select>
+
+<br/>
+
+<% end %>
+
+<br/>&nbsp;<br/> 
+
+<input type="submit" label="pick the destination" value="Pick the Destination"  tabindex="2" size="25"/> 
+
+</form> 

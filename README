@@ -1,0 +1,50 @@
+
+** need to break out the text splitting code
+
+** tests tests tests
+
+** catch internal <a> links
+
+
+
+
+- methods in original app
+
+def detect_false_sentence_break(sentence)
+def process_sentence(sentence)
+def validate_patent_id(patent_str)
+def build_uspto_url(patent_type, patent_id)
+def fetch_patent_from_uspto(patent_type, patent_id)
+def test_not_found(patent_str, text)
+def process_hdr_block(patent_type, patent_id, hdr_block)
+
+
+
+
+
+Ideas
+
+- links from patent numbers
+	- easy
+	
+- Show original text with a 'show more' button on each paragraph
+
+- Detect main headings and provide jump to links
+
+- Allow users to add notes
+
+- Allow users to add bookmarks/place holders
+
+- Need to fix URLs in US patents e.g. "Referenced By"
+
+- If a sentence is extremely long then switch to a secondary line break character
+	e.g. US6677436
+	- search for 'The contents in the sequence listing'
+	- split on   SEQ ID NO: 1:  - split before the SEQ ID
+	- very hard to decide where to make the split....
+		- find the most common string and assume that marks the start of a sentence ??
+		
+
+Google fonts include line
+  <link  href="//fonts.googleapis.com/css?family=Slackey:regular" rel="stylesheet" type="text/css" >
+

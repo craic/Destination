@@ -1,0 +1,90 @@
+body {
+	background-color: #fff;
+	font-family: "Lucida Grande", arial, sans-serif;
+	padding: none;
+	margin-top: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+img { border: none; }
+
+a {	color: #600; }
+a:link { color: #600; }
+a:visited { color: #600; }
+a:hover { color: #b74; }
+
+#header {
+	margin-top: 0px;
+	margin-bottom: 30px;
+	font-size: 18px;
+	font-weight: normal;
+	color: #ffa;
+	background-color: black;
+	height: 50px;
+	padding: 10px;
+}
+
+	
+#banner {
+	font-size: 36px;
+	color: #fff;
+	text-align: left;
+	float: left; 
+}
+#banner a { text-decoration: none; }
+#banner a:link { color: #ffa; }
+#banner a:visited { color: #ffa; }
+#banner a:hover { color: #fb4; }
+
+#header-form {
+	float: left;
+}
+
+#main-content {
+	margin-left: auto;
+	margin-right: auto;
+	width: 90%;
+}
+
+#footer {
+	padding-left:  5px;
+	padding-top:   50px;
+	padding-bottom:  5px;
+
+	font-size: 12px;
+	line-height: 20px;
+	text-align: center;
+}
+
+#footer img { vertical-align: middle; }
+#footer span { vertical-align: middle; }
+
+#main-content form input {
+	font-size: 14px;
+}
+
+.background-text {
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: Georgia, Times, serif;
+	color: #444;
+	font-size: 16px;
+}
+
+.background-text h2 {
+	text-align: center;
+	color: #000;
+	font-size: 18px;
+	font-weight: normal;
+}
+
+
+
+
+
+
+
+
+
